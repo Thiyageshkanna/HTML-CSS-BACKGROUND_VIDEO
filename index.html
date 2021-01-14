@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS video background</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font awesome -->
+    <link href="your-project-dir/font-css/LineIcons.css" rel="stylesheet" />
+    <!-- or -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">
+          T<span class="white">r</span>a<span class="white">v</span>e<span
+            class="white"
+            >l</span
+          >
+        </h2>
+        <div class="toggle"></div>
+      </header>
+
+      <video src="stuff/video background.mp4" muted autoplay loop></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>never stop</h2>
+        <h3>exploring the world</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia optio
+          dignissimos quisquam doloribus vel eos repudiandae eius, dolorum dicta
+          eveniet placeat iusto provident, odio ipsam tempora. Earum praesentium
+          nam aliquid.
+        </p>
+        <div><a href="#" class="btn">explore</a></div>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href=""><i class="lni lni-facebook-oval"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="lni lni-twitter"></i></a>
+        </li>
+        <li>
+          <a href=""> <i class="lni lni-instagram"></i></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="navbar">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">destination</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">package</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+
+    <!-- js -->
+
+    <script>
+      const showcase = document.querySelector(".showcase");
+      const toggle = document.querySelector(".toggle");
+
+      toggle.addEventListener("click", () => {
+        showcase.classList.toggle("active");
+        toggle.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
